@@ -37,17 +37,53 @@ namespace OrganizationProfile
         /////return methods 
         public long StudentNumber(string studNum)
         {
+            try
+            {
 
-            _StudentNo = long.Parse(studNum);
+                _StudentNo = long.Parse(studNum);
 
-            return _StudentNo;
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Error: FormatException in student Number");
+
+            }
+            finally {
+
+                Console.WriteLine("Finally: Format Exception");
+            
+            }
+                return _StudentNo;
         }
+
 
         public long ContactNo(string Contact)
         {
-            if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+            try
             {
-                _ContactNo = long.Parse(Contact);
+
+                if (Regex.IsMatch(Contact, @"^[0-9]{10,11}$"))
+                {
+                    _ContactNo = long.Parse(Contact);
+                }
+            }
+            catch (FormatException)
+            {
+
+                MessageBox.Show("Error: Format Exception in contact");
+
+            }
+            catch (OverflowException)
+            { //catches the overlowing numbers for long
+
+                MessageBox.Show("Error: Overflowing Exception in contact");
+
+            }
+            finally {
+
+                Console.WriteLine("Finalizing resource cleanup...");
+            
             }
 
             return _ContactNo;
@@ -55,9 +91,20 @@ namespace OrganizationProfile
 
         public string FullName(string LastName, string FirstName, string MiddleInitial)
         {
-            if (Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
-            {
-                _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
+
+            try {
+
+                if (Regex.IsMatch(LastName, @"^[a-zA-Z]+$") || Regex.IsMatch(FirstName, @"^[a-zA-Z]+$") || Regex.IsMatch(MiddleInitial, @"^[a-zA-Z]+$"))
+                {
+                    _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
+
+                }
+
+            }
+            catch (FormatException ) {
+
+                MessageBox.Show("Error: Format Exception in name");
+            
             }
 
             return _FullName;
@@ -65,9 +112,24 @@ namespace OrganizationProfile
 
         public int Age(string age)
         {
-            if (Regex.IsMatch(age, @"^[0-9]{1,3}$"))
-            {
-                _Age = Int32.Parse(age);
+            try {
+
+                if (Regex.IsMatch(age, @"^[0-9]{1,3}$"))
+                {
+                    _Age = Int32.Parse(age);
+                    
+                }
+
+            }
+            catch (FormatException) {
+
+                MessageBox.Show("Error: Format Exception in Age");
+
+            }
+            catch (OverflowException) {
+
+                MessageBox.Show("Error: Overflowing Exception in age");
+            
             }
 
             return _Age;
@@ -75,6 +137,7 @@ namespace OrganizationProfile
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+
             StudentInformationClass.SetFullName = FullName(txtLastName.Text,
             txtFirstName.Text, txtMiddleInitial.Text);
             StudentInformationClass.SetStudentNo = StudentNumber(txtStudentNo.Text);
@@ -91,15 +154,18 @@ namespace OrganizationProfile
 
         private void btnFill_Click(object sender, EventArgs e)
         {
-            txtStudentNo.Text = 99888223.ToString();
-            txtFirstName.Text = "Naruto";
-            cmbPrograms.Text = "BS";
-            txtAge.Text = 25.ToString();
-            cmbGender.Text = cmbGender.SelectedItem.ToString();
-            txtContact.Text = 98887776622.ToString();
-            txtMiddleInitial.Text = "k";
+             txtStudentNo.Text = 99888223.ToString();
+             txtFirstName.Text = "Naruto";
+            txtLastName.Text = "Uzuaki";
+             cmbPrograms.Text = "BS Information Technology";
+             txtAge.Text = 25.ToString();
+             cmbGender.Text = "Male";
+             txtContact.Text = 98887776622.ToString();
+             txtMiddleInitial.Text = "k";
 
-            pickerBday.Text = pickerBday.Value.ToString("yyyyMM-dd");
+
+            StudentInformationClass.SetBirthday = pickerBday.Value.ToString("yyyyMM-dd");
+
 
 
         }
