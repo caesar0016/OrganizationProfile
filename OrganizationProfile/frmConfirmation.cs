@@ -35,6 +35,9 @@ namespace OrganizationProfile
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Submit Success");
+
+      
 
         }
     }

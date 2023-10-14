@@ -1,5 +1,4 @@
 
-
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Text.RegularExpressions;
 
@@ -67,6 +66,11 @@ namespace OrganizationProfile
                 {
                     _ContactNo = long.Parse(Contact);
                 }
+                else {
+
+                    throw new IndexOutOfRangeException("Error: Out of range in contact");
+                
+                }
             }
             catch (FormatException)
             {
@@ -98,6 +102,11 @@ namespace OrganizationProfile
                 {
                     _FullName = LastName + ", " + FirstName + ", " + MiddleInitial;
 
+                }
+                else {
+
+                    throw new ArgumentNullException("Plss input in firstname, last name, and middle initial");
+                
                 }
 
             }
@@ -149,24 +158,26 @@ namespace OrganizationProfile
             StudentInformationClass.SetBirthday = pickerBday.Value.ToString("yyyyMM-dd");
 
             frmConfirmation frm = new frmConfirmation();
-            frm.ShowDialog();
+            frm.Show();
         }
 
-        private void btnFill_Click(object sender, EventArgs e)
+   
+
+        private void btnClear_Click(object sender, EventArgs e)
         {
-             txtStudentNo.Text = 99888223.ToString();
-             txtFirstName.Text = "Naruto";
-            txtLastName.Text = "Uzuaki";
-             cmbPrograms.Text = "BS Information Technology";
-             txtAge.Text = 25.ToString();
-             cmbGender.Text = "Male";
-             txtContact.Text = 98887776622.ToString();
-             txtMiddleInitial.Text = "k";
+            clear();
+        }
 
+        void clear() {
 
-            StudentInformationClass.SetBirthday = pickerBday.Value.ToString("yyyyMM-dd");
-
-
+            txtStudentNo.Text = "";
+            txtFirstName.Text = "";
+            txtLastName.Text = "";
+            cmbPrograms.Text = "";
+            txtAge.Text = "";
+            cmbGender.Text = "";
+            txtContact.Text = "";
+            txtMiddleInitial.Text = "";
 
         }
     }

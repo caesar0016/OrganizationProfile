@@ -28,199 +28,200 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            lblAge = new Label();
-            lblContactNo = new Label();
-            lblGender = new Label();
-            lblBirthday = new Label();
-            lblProgram = new Label();
-            lblName = new Label();
-            lblStudentNo = new Label();
-            btnSubmit = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.lblContactNo = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblBirthday = new System.Windows.Forms.Label();
+            this.lblProgram = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblStudentNo = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(75, 51);
-            label1.Name = "label1";
-            label1.Size = new Size(110, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Student No:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(65, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student No:";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(75, 92);
-            label2.Name = "label2";
-            label2.Size = new Size(66, 25);
-            label2.TabIndex = 1;
-            label2.Text = "Name:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(65, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Name:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(75, 207);
-            label3.Name = "label3";
-            label3.Size = new Size(86, 25);
-            label3.TabIndex = 3;
-            label3.Text = "Birthday:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(65, 208);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Birthday:";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(75, 137);
-            label4.Name = "label4";
-            label4.Size = new Size(89, 25);
-            label4.TabIndex = 2;
-            label4.Text = "Program:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(65, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Program:";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(75, 173);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 25);
-            label5.TabIndex = 6;
-            label5.Text = "Age:";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(65, 174);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 25);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Age:";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(75, 289);
-            label6.Name = "label6";
-            label6.Size = new Size(111, 25);
-            label6.TabIndex = 5;
-            label6.Text = "Contact No:";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(65, 290);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 25);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Contact No:";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(75, 244);
-            label7.Name = "label7";
-            label7.Size = new Size(78, 25);
-            label7.TabIndex = 4;
-            label7.Text = "Gender:";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(65, 245);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 25);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Gender:";
             // 
             // lblAge
             // 
-            lblAge.AutoSize = true;
-            lblAge.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAge.Location = new Point(226, 173);
-            lblAge.Name = "lblAge";
-            lblAge.Size = new Size(63, 25);
-            lblAge.TabIndex = 13;
-            lblAge.Text = "label8";
+            this.lblAge.AutoSize = true;
+            this.lblAge.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblAge.Location = new System.Drawing.Point(216, 174);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(63, 25);
+            this.lblAge.TabIndex = 13;
+            this.lblAge.Text = "label8";
             // 
             // lblContactNo
             // 
-            lblContactNo.AutoSize = true;
-            lblContactNo.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblContactNo.Location = new Point(226, 289);
-            lblContactNo.Name = "lblContactNo";
-            lblContactNo.Size = new Size(63, 25);
-            lblContactNo.TabIndex = 12;
-            lblContactNo.Text = "label9";
+            this.lblContactNo.AutoSize = true;
+            this.lblContactNo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblContactNo.Location = new System.Drawing.Point(216, 290);
+            this.lblContactNo.Name = "lblContactNo";
+            this.lblContactNo.Size = new System.Drawing.Size(63, 25);
+            this.lblContactNo.TabIndex = 12;
+            this.lblContactNo.Text = "label9";
             // 
             // lblGender
             // 
-            lblGender.AutoSize = true;
-            lblGender.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGender.Location = new Point(226, 244);
-            lblGender.Name = "lblGender";
-            lblGender.Size = new Size(73, 25);
-            lblGender.TabIndex = 11;
-            lblGender.Text = "label10";
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGender.Location = new System.Drawing.Point(216, 245);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(73, 25);
+            this.lblGender.TabIndex = 11;
+            this.lblGender.Text = "label10";
             // 
             // lblBirthday
             // 
-            lblBirthday.AutoSize = true;
-            lblBirthday.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBirthday.Location = new Point(226, 207);
-            lblBirthday.Name = "lblBirthday";
-            lblBirthday.Size = new Size(73, 25);
-            lblBirthday.TabIndex = 10;
-            lblBirthday.Text = "label11";
+            this.lblBirthday.AutoSize = true;
+            this.lblBirthday.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBirthday.Location = new System.Drawing.Point(216, 208);
+            this.lblBirthday.Name = "lblBirthday";
+            this.lblBirthday.Size = new System.Drawing.Size(73, 25);
+            this.lblBirthday.TabIndex = 10;
+            this.lblBirthday.Text = "label11";
             // 
             // lblProgram
             // 
-            lblProgram.AutoSize = true;
-            lblProgram.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProgram.Location = new Point(226, 137);
-            lblProgram.Name = "lblProgram";
-            lblProgram.Size = new Size(73, 25);
-            lblProgram.TabIndex = 9;
-            lblProgram.Text = "label12";
+            this.lblProgram.AutoSize = true;
+            this.lblProgram.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblProgram.Location = new System.Drawing.Point(216, 138);
+            this.lblProgram.Name = "lblProgram";
+            this.lblProgram.Size = new System.Drawing.Size(73, 25);
+            this.lblProgram.TabIndex = 9;
+            this.lblProgram.Text = "label12";
             // 
             // lblName
             // 
-            lblName.AutoSize = true;
-            lblName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblName.Location = new Point(226, 92);
-            lblName.Name = "lblName";
-            lblName.Size = new Size(73, 25);
-            lblName.TabIndex = 8;
-            lblName.Text = "label13";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblName.Location = new System.Drawing.Point(216, 93);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(73, 25);
+            this.lblName.TabIndex = 8;
+            this.lblName.Text = "label13";
             // 
             // lblStudentNo
             // 
-            lblStudentNo.AutoSize = true;
-            lblStudentNo.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblStudentNo.Location = new Point(226, 51);
-            lblStudentNo.Name = "lblStudentNo";
-            lblStudentNo.Size = new Size(73, 25);
-            lblStudentNo.TabIndex = 7;
-            lblStudentNo.Text = "label14";
+            this.lblStudentNo.AutoSize = true;
+            this.lblStudentNo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblStudentNo.Location = new System.Drawing.Point(216, 52);
+            this.lblStudentNo.Name = "lblStudentNo";
+            this.lblStudentNo.Size = new System.Drawing.Size(73, 25);
+            this.lblStudentNo.TabIndex = 7;
+            this.lblStudentNo.Text = "label14";
             // 
             // btnSubmit
             // 
-            btnSubmit.Location = new Point(157, 360);
-            btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(75, 23);
-            btnSubmit.TabIndex = 14;
-            btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
-            btnSubmit.Click += btnSubmit_Click;
+            this.btnSubmit.Location = new System.Drawing.Point(263, 347);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 14;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // frmConfirmation
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDarkDark;
-            ClientSize = new Size(413, 450);
-            Controls.Add(btnSubmit);
-            Controls.Add(lblAge);
-            Controls.Add(lblContactNo);
-            Controls.Add(lblGender);
-            Controls.Add(lblBirthday);
-            Controls.Add(lblProgram);
-            Controls.Add(lblName);
-            Controls.Add(lblStudentNo);
-            Controls.Add(label5);
-            Controls.Add(label6);
-            Controls.Add(label7);
-            Controls.Add(label3);
-            Controls.Add(label4);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "frmConfirmation";
-            Text = "Confirmation";
-            Load += frmConfirmation_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(575, 450);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.lblContactNo);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.lblBirthday);
+            this.Controls.Add(this.lblProgram);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblStudentNo);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "frmConfirmation";
+            this.Text = "Confirmation";
+            this.Load += new System.EventHandler(this.frmConfirmation_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

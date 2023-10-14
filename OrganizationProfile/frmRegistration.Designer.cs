@@ -48,7 +48,7 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.txtContact = new System.Windows.Forms.TextBox();
             this.pickerBday = new System.Windows.Forms.DateTimePicker();
-            this.btnFill = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -220,15 +220,15 @@
             this.pickerBday.Size = new System.Drawing.Size(200, 23);
             this.pickerBday.TabIndex = 20;
             // 
-            // btnFill
+            // btnClear
             // 
-            this.btnFill.Location = new System.Drawing.Point(439, 290);
-            this.btnFill.Name = "btnFill";
-            this.btnFill.Size = new System.Drawing.Size(75, 23);
-            this.btnFill.TabIndex = 21;
-            this.btnFill.Text = "Fill";
-            this.btnFill.UseVisualStyleBackColor = true;
-            this.btnFill.Click += new System.EventHandler(this.btnFill_Click);
+            this.btnClear.Location = new System.Drawing.Point(240, 329);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // frmRegistration
             // 
@@ -236,7 +236,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(629, 360);
-            this.Controls.Add(this.btnFill);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.pickerBday);
             this.Controls.Add(this.txtContact);
             this.Controls.Add(this.btnRegister);
@@ -286,6 +286,6 @@
         private Button btnRegister;
         private TextBox txtContact;
         private DateTimePicker pickerBday;
-        private Button btnFill;
+        private Button btnClear;
     }
 }
